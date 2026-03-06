@@ -1,0 +1,7 @@
+pre-push:
+  parallel: true
+  commands:
+    python-tests:
+      run: bash scripts/test-python.sh
+    rust-tests:
+      run: bash scripts/test-rust.sh
