@@ -1,0 +1,33 @@
+# macOS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# Rust
+watcher-rs/target/
+
+# Local helper build assets
+src/harbor_stream/assets/harbor-stream-helper-linux-amd64
+src/harbor_stream/assets/harbor-stream-helper-linux-arm64
+
+# Misc
+*.log

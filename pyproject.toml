@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harbor-stream"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "harbor>=0.1.45,<0.2",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+harbor-stream = "harbor_stream.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+harbor_stream = ["assets/*", "assets/**/*"]
